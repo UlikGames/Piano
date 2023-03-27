@@ -33,13 +33,13 @@
           <div class="time">{{note.time}}</div>
         </li>
       </ul>
-      <button v-on:click="load_sample">Mənim əsərim</button>
-      <button v-on:click="playnext(1)">Sonraki not</button>
-      <button v-if="playing_time&lt;=1" v-on:click="startplay">Başlat<i class="fa fa-play"></i></button>
-      <button v-if="playing_time&gt;1" v-on:click="stopplay">Durdur<i class="fa fa-pause"></i></button>
-      <button v-if="record_time&lt;=0" v-on:click="start_record">Kayıt başlat<i class="fa fa-circle"></i></button>
-      <button v-if="record_time&gt;=1" v-on:click="stop_record">Kayıt durdur<i class="fa fa-top"></i></button>
-      <button v-on:click="notes=[]">Təmizlə</button>
+      <button v-on:click="load_sample">My musical work</button>
+      <button v-on:click="playnext(1)">Next note</button>
+      <button v-if="playing_time&lt;=1" v-on:click="startplay">Start<i class="fa fa-play"></i></button>
+      <button v-if="playing_time&gt;1" v-on:click="stopplay">Stop<i class="fa fa-pause"></i></button>
+      <button v-if="record_time&lt;=0" v-on:click="start_record">Start record<i class="fa fa-circle"></i></button>
+      <button v-if="record_time&gt;=1" v-on:click="stop_record">Stop record<i class="fa fa-top"></i></button>
+      <button v-on:click="notes=[]">Clear</button>
       <h4>{{playing_time+record_time}}</h4>
     </div>
   </div>
